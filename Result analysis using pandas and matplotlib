@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+import openpyxl
+students_marks=pd.read_excel('SecondSemECEMarks--1-.xlsx')
+#print(students_marks.to_string())
+students_marks=students_marks.drop(['IT'],axis=1)
+#print(students_marks.to_string())
+print(students_marks['Maths'].value_counts())
+                             
