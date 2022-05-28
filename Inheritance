@@ -1,0 +1,28 @@
+class Polygon:
+  def __init__(self,no_of_sides):
+    self.n=no_of_sides
+    self.sides=[0 for i in range (self.n)]
+  def inputsides(self):
+    self.sides=[float (input("enterside"+str(i+1)+ " ")) for i in range(self.n)]
+  def dispsides(self):
+      for i in range (self.n):
+        print("side"+str(i+1),self.sides[i])
+#p1=polygon(3)
+#p1.dispsides()
+#p1.inputsides()
+#p1.dispsides()
+class Triangle(Polygon):
+  def __init__(self):
+    Polygon.__init__(self,3)
+  def FindArea(self):
+    a,b,c=self.sides
+    s=(a+b+c)/2
+    area=(s*(s-a)*(s-b)*(s-c))**0.5
+    print("Area of the Triangle is %0 2f"%area)
+T1=Triangle()
+T1.inputsides()
+T1.dispsides()
+T1.FindArea()
+        
+        
+  
