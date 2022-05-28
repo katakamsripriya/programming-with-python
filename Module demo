@@ -1,0 +1,8 @@
+def add_nums(x,y):
+  return x+y
+def sub_nums(x,y):
+  return x-y
+def mul_nums(x,y):
+  return x*y
+def div_nums(x,y):
+  return x/y
