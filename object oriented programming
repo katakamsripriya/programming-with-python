@@ -1,0 +1,9 @@
+class Student:
+  def __init__(self,n,r):
+    self.name=n
+    self.roll_no=r
+  def email_id(self):
+    self.email= self.name+"@gitam.in"
+    print("mail id of"+self.name+"is",self.email)
+s1=Student("sripriya",90)
+s1.email_id()
